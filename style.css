@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Sono&display=swap');
+
+*{
+    padding:0%;
+    margin:0%;
+}
+/* body */
+body{
+    height:100vh;
+    width:100vw;
+    background-image: url("background.gif");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    /* overflow: hidden; */
+    background-attachment: fixed;
+    border:5px solid rgba(126, 120, 125,0.5) ;
+     
+}
+.header{
+    font-size: 30px;
+    position: absolute;
+    top:20px;
+    font-family: 'Caveat', cursive;
+    color:white;
+    text-shadow: 4px 6px 4px rgb(240, 33, 26);
+    text-decoration:underline;
+}
+.container{
+    top:70px;
+    background-color:transparent;
+    padding:60px 60px;
+    border:2px solid rgba(126, 120, 125, 0.8) ;
+    border-radius: 30px;
+    height:250px;
+    width:300px;
+    transition:1s;
+    position:relative;
+    box-shadow: 4px 4px 20px rgb(240, 33, 26) inset,10px 10px 15px rgb(247, 73, 67);
+}
+
+ .ip{
+    margin-top:10px;
+    width:100%;
+    background-color:transparent;
+    border:1px solid rgba(241, 27, 117, 0.5);
+    border-radius: 15px;
+    height:40px;
+    font-family: 'Sono', sans-serif;
+    color:white;
+    font-size: 30px;
+    box-shadow: 4px 4px 10px rgb(240, 33, 26) inset,2px 2px 15px rgb(247, 73, 67);
+}
+::placeholder{
+    color:rgb(252, 252, 252);
+    opacity: 0.8;
+    font-size: 15px;
+    text-align: center;
+}
+
+ .but{
+    cursor:pointer;
+    color:black;
+    margin-top:30px;
+    padding:10px;
+    background-color:transparent;
+    border:1px solid rgba(235, 15, 88, 0.5);
+    border-radius: 15px;
+    width:80%;
+    margin-left: 10%;
+    font-family: 'Sono', sans-serif;
+    color:rgb(247, 181, 241);
+    font-size: 25px;
+    box-shadow: 4px 4px 10px rgb(240, 33, 26) inset,2px 2px 15px rgb(247, 73,67);
+    
+}
+.but:hover{
+    transform: scale(1.1,1.1);
+    color:white;
+    letter-spacing: 0.2em;
+    box-shadow: 0 0 20px rgb(212, 18, 18) inset;
+}
+#result{
+    position:absolute;
+ 
+    bottom: -1px;
+    right:-10px;
+    width:100vw;
+    /* height:50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+    text-shadow: 2px 3px 4px rgb(240, 33, 26);
+}
+.hid{
+    display: none;
+}
+
+@media (max-width:600px){
+    body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+       
+    }
+    .header{
+        font-size: 20px;
+    }
+    .container{
+        top:30px;
+        padding:40px 40px;
+    }
+    #result{
+        top:500px;
+    }
+
+}

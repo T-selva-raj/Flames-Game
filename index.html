@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAMES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.jpg"  />
+</head>
+<body>
+    <div class="header">
+         <h1><center>Welcome to Flames</center></h1>
+    </div>
+    <div class="container" id="container">
+                <input class="ip" type="text" id="you" placeholder="Enter your name..">
+                <br>
+                <input class="ip" type="text" id="partner" placeholder="Enter your partner name..">
+                <br>
+                <button class="but" onclick="flame(you.value,partner.value)">clickme</button>
+                <button class="but" onclick="clearResult()">clear</button>
+    </div>
+    <p id="result"></p>
+    <script src="script.js"></script>"
+</body>
+</html>
